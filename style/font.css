@@ -1,0 +1,35 @@
+/* import noto font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Sans+Symbols+2:wght@400;700&display=swap");
+
+/* import instrument serif for my heading */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;700&display=swap");
+
+html {
+  font-family: "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans",
+    "Noto Sans Symbols 2", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans Devanagari", "Noto Sans Tamil", "Noto Sans",
+    "Noto Sans Symbols 2", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.serif-font {
+  font-family: "Instrument Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  font-family: "Instrument Serif", serif;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: .8;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods Home</title>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar">
+      <div class="nav-container main">
+        <a href="#" class="nav-logo"
+          ><h2><i>OurFoods Barn</i></h2></a
+        >
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero base1">
+      <div class="main hero-main">
+        <div style="margin-bottom: 2em">
+          <h1>Love just <i>like you</i></h1>
+          <p>
+            From the first sizzle in the pan to the final satisfied sigh, every
+            meal tells a story of tradition passed down through generations, of
+            innovation born from passion, and of the simple joy found in sharing
+            something delicious with the people we love.
+          </p>
+        </div>
+        <button class="primary-btn serif-font">Order Favorite Meal</button>
+      </div>
+    </div>
+
+    <div class="hero base2">
+      <div class="main hero-main">
+        <div style="margin-bottom: 2em">
+          <h1>Blessings<i>& Nourishment</i></h1>
+          <p>
+            Food is more than sustenance—it's the thread that weaves through our
+            most cherished memories, the catalyst for connection, and the
+            universal language that speaks to every culture.
+          </p>
+        </div>
+        <button class="primary-btn serif-font">Order Favorite Meal</button>
+      </div>
+    </div>
+
+    <style>
+      .hero {
+        color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 0;
+      }
+
+      .base1 {
+        background-color: black;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("./assets/images/foodbg.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .base2 {
+        background-color: black;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("./assets/images/foodbg2.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .hero-main {
+        max-width: 90%;
+        width: 750px;
+      }
+    </style>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      });
+    </script>
+
+    <!-- hero -->
+
+    <!--  about -->
+
+    <!-- footer -->
+  </body>
+</html>

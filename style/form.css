@@ -1,0 +1,19 @@
+form {
+
+}
+
+button {
+    padding: 12px 24px;
+    margin: 0;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    color: none;
+
+}
+
+.primary-btn {
+    background: white;
+    color: black;
+}

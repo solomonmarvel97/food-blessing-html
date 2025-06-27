@@ -1,0 +1,26 @@
+@import url('./font.css');
+@import url('./utility.css');
+@import url('./form.css');
+
+/* component styles */
+@import url('./components/nav.css');
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+.main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+    
+    scroll-behavior: smooth;
+}
+
