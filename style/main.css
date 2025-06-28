@@ -2,8 +2,10 @@
 @import url('./utility.css');
 @import url('./form.css');
 
+
 /* component styles */
 @import url('./components/nav.css');
+@import url('./components/food-section.css');
 
 html {
     scroll-behavior: smooth;

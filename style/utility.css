@@ -20,3 +20,10 @@
 .weight-700 {
     font-weight: 700;
 }
+
+
+/* color utilities */
+.color-black {
+    background-color: black;
+    color: white
+}
